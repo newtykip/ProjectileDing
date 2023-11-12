@@ -20,14 +20,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ProjectileDingMixin {
     @Shadow public abstract void setSound(SoundEvent sound);
 
-    @Unique private ClientPlayerEntity clientPlayer;
-
+    @Unique private ClientPlayerEntity projectileDing$clientPlayer;
 
     @Inject(method = "onEntityHit", at = @At("HEAD"))
     private void onEntityHitHead(EntityHitResult entityHitResult, CallbackInfo ci) {
         // if it has not already been cached, do that!
-        if (this.clientPlayer == null) {
-            this.clientPlayer = MinecraftClient.getInstance().player;
+        if (this.projectileDing$clientPlayer == null) {
+            this.projectileDing$clientPlayer = MinecraftClient.getInstance().player;
         }
 
         Entity target = entityHitResult.getEntity();
@@ -37,7 +36,7 @@ public abstract class ProjectileDingMixin {
             ProjectileEntity projectile = (ProjectileEntity) (Object) this;
 
             // ensure that the projectile has been fired by the client player
-            if (this.clientPlayer.equals(projectile.getOwner())) {
+            if (this.projectileDing$clientPlayer.equals(projectile.getOwner())) {
                 this.setSound(SoundEvents.ENTITY_ARROW_HIT_PLAYER);
             }
         }

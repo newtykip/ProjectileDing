@@ -3,6 +3,8 @@
 A spiritual successor to [DingOnProjectileHit](https://github.com/ItsVen/DingOnProjectileHit). Plays the
 ENTITY_ARROW_HIT_PLAYER sound whenever you hit a mob with an arrow.
 
+[A video of the mod in action](https://www.youtube.com/watch?v=WpB4vh8CIRk)
+
 ### Differences with DingOnProjectileHit
 
 - Supports [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), and [Forge](https://files.minecraftforge.net/).
