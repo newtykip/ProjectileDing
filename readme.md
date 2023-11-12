@@ -6,10 +6,12 @@ ENTITY_ARROW_HIT_PLAYER sound whenever you hit a mob with an arrow.
 ### Differences with DingOnProjectileHit
 
 - Supports [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), and [Forge](https://files.minecraftforge.net/).
-- Actively maintained
+- Updated to latest versions of Minecraft
 
-## todo
+## Coming soon
 
-- Allow it to function on the server-side
-  - Make sure that if a user has it client-side that the noise is not duplicated
-- Support NeoForge
+- Server-side functionality
+  - note: Make sure that if a user has it client-side that the noise is not duplicated
+- Support [NeoForge](https://neoforged.net)
+
+<sub>licensed with the <a href="license.md">opinionated queer license v1.1</a> - tl;dr see <a href="https://oql.avris.it/">here</a> :]</sub>
