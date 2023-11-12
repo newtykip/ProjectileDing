@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "projectileding",
+  "version": "${version}",
+
+  "name": "Projectile Ding",
+  "description": "Plays a ding when mobs are shot with arrows.",
+  "authors": [
+    "newtykins"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/projectile-ding",
+    "issues": "https://github.com/newtykins/ProjectileDing/issues",
+    "sources": "https://github.com/newtykins/ProjectileDing",
+    "discord": "https://discord.gg/62kNFYBvKB"
+  },
+
+  "license": "OQL",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "projectileding.mixins.json",
+    "projectileding-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.24",
+    "minecraft": ">=1.20"
+  }
+}
