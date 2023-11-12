@@ -12,11 +12,16 @@ subprojects {
 
     loom {
         silentMojangMappingsLicense()
+
+        forge {
+            mixinConfig "projectileding-common.mixins.json"
+        }
     }
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
         mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
+        forge "net.minecraftforge:forge:${rootProject.forge_version}"
     }
 }
 
