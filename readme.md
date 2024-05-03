@@ -1,3 +1,5 @@
+## The repository for this project is now hosted on [codeberg](https://codeberg.org/newt/ProjectileDing)!
+
 # ProjectileDing
 
 A spiritual successor to [DingOnProjectileHit](https://github.com/ItsVen/DingOnProjectileHit). Plays the
